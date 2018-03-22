@@ -59,3 +59,7 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+set :rails_env, :staging
+server '35-154-232-0', user: 'deploy', roles: %w{web app}
+
+
